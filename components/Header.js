@@ -6,8 +6,8 @@ import { HomeIcon,UserIcon,PhoneIcon,InformationCircleIcon } from '@heroicons/re
 
 export default function Header() {
   return (
-    <div>
-        <div>
+    <div className='bg-gray-700 text-gray-200 flex flex-col items-center p-6 select-none sm:flex-row justify-between'>
+        <div className='flex '>
             <Headericon Icon={HomeIcon} title="Home" />
             <Headericon Icon={UserIcon} title="Account" />
             <Headericon Icon={PhoneIcon} title="Contact" />
@@ -18,6 +18,7 @@ export default function Header() {
             alt={'IMDB Logo'}
             width={100}
             height={100}
+            className='cursor-pointer active:brightness-110'
             />
         </div>
 
